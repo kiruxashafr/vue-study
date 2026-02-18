@@ -52,14 +52,14 @@ const handleLogin = async () => {
 
       <form @submit.prevent="handleLogin" class="auth-form">
         <div class="field">
-          <label for="login">Логин</label>
-          <InputText id="login" v-model="paiload.email" :disabled="isLoading" fluid />
+          <label for="login_email">Логин</label>
+          <InputText id="login_email" v-model="paiload.email" :disabled="isLoading" fluid />
         </div>
 
         <div class="field">
-          <label for="password">Пароль</label>
+          <label for="login_pass">Пароль</label>
           <Password
-            id="password"
+            inputId="login_pass"
             v-model="paiload.password"
             :disabled="isLoading"
             :feedback="false"
